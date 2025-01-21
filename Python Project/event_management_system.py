@@ -55,7 +55,7 @@ class LoginWindow:
     def load_background_image(self):
         try:
             # Load image using PIL
-            image_path = r"C:\Users\cheve\PycharmProjects\Python Project\Screenshot 2025-01-14 124404.png"
+            image_path = r"Python Project\Screenshot 2025-01-14 124404.png"
             img = Image.open(image_path)
             img = img.resize(
                 (self.root.winfo_screenwidth(), self.root.winfo_screenheight()))  # Resize image to fit screen
@@ -73,7 +73,7 @@ class LoginWindow:
 
     def load_top_image(self):
         try:
-            image_path = r"C:\Users\cheve\PycharmProjects\Python Project\Aurora.jpg"  # Update with your actual image file name
+            image_path = r"Python Project\Aurora.jpg"  # Update with your actual image file name
             img = Image.open(image_path)
             img = img.resize((200, 200))  # Resize image to fit the window width
             self.top_image = ImageTk.PhotoImage(img)
@@ -623,7 +623,7 @@ class EventManagementSystem:
         def print_invoice(self, client_name, client_contact, event_type, total_price, gst_amount, grand_total,
                           selected_services):
             # Load an existing image
-            image_path = "C:\\Users\\cheve\\PycharmProjects\\Python Project\\Invoice.jpg"
+            image_path = "C:Python Project\\Invoice.jpg"
             image = Image.open(image_path)
             draw = ImageDraw.Draw(image)
             font_size = 20  # Adjust as needed
@@ -656,7 +656,7 @@ class EventManagementSystem:
                                         grand_total)
 
             # Save the image with invoice details
-            output_path = "C:\\Users\\cheve\\PycharmProjects\\Python Project\\Invoice_print.jpg"
+            output_path = "Python Project\\Invoice_print.jpg"
             image.save(output_path)
             image.show()
             #messagebox.showinfo("Success", f"Invoice printed to {output_path}")
